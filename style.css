@@ -1,0 +1,112 @@
+:root {
+    --bg-color: #f3f4f6;
+    --text-color: #333;
+    --note-bg: #f9fafb;
+    --note-border: #4f46e5;
+    --btn-bg: #4f46e5;
+    --btn-hover: #4338ca;
+  }
+  
+  body.dark {
+    --bg-color: #1f2937;
+    --text-color: #f3f4f6;
+    --note-bg: #374151;
+    --note-border: #818cf8;
+    --btn-bg: #6366f1;
+    --btn-hover: #4f46e5;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 2rem;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    background: var(--bg-color);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  #theme-toggle {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    background: var(--note-bg);
+    color: var(--text-color);
+  }
+  
+  button {
+    background-color: var(--btn-bg);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: block;
+    margin: 0 auto 2rem auto;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: var(--btn-hover);
+  }
+  
+  .note {
+    background: var(--note-bg);
+    padding: 1rem;
+    border-left: 4px solid var(--note-border);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    position: relative;
+    color: var(--text-color);
+  }
+  
+  .note button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    color: #dc2626;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  
