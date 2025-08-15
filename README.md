@@ -17,3 +17,5 @@ A simple and elegant Notes App made with **HTML**, **CSS**, and **JavaScript**.
 ---
 
 > Built with ☕, 🎧 and a lot of 💡
+
+## Follow me on IG!
